@@ -1,0 +1,44 @@
+[
+  {
+    "query_id": "q16",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact effective date 01/07/2023 grounded in p29:para:001 (preserved by 2200-char budget)."
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact 72-hour erasure rule grounded in p15:para:001."
+  },
+  {
+    "query_id": "q18",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: cross-page split separated Điều 17 title (p15:para:002) from khoản 4 (p16:para:001), so p16:para:001 missed top-3 even after reformulation."
+  },
+  {
+    "query_id": "q19",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p01:para:001 (helped by Chương I metadata filter + budget=2200)."
+  },
+  {
+    "query_id": "q20",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p28:para:000 (helped by Chương III filter + rerank)."
+  },
+  {
+    "query_id": "u03",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "Correct abstention after 2 searches."
+  },
+  {
+    "query_id": "u04",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "Correct abstention after 3 searches."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "config": "dev-dense",
+  "strategy": "dense_pgvector",
+  "split": "dev",
+  "top_k": 3,
+  "budget_chars": 800,
+  "n": 15,
+  "hit1": 10,
+  "hit1_rate": 0.6667,
+  "hit3": 14,
+  "hit3_rate": 0.9333,
+  "context_hit": 10,
+  "context_hit_rate": 0.6667,
+  "avg_context_chars": 628.7,
+  "median_ms": 327.157,
+  "total_ms": 6383.941,
+  "service_cost_usd": 0.0,
+  "model_load_seconds": 20.453
+}

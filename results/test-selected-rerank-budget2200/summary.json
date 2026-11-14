@@ -1,0 +1,19 @@
+{
+  "config": "test-selected-rerank-budget2200",
+  "strategy": "hybrid_rerank",
+  "split": "test",
+  "top_k": 3,
+  "budget_chars": 2200,
+  "n": 5,
+  "hit1": 2,
+  "hit1_rate": 0.4,
+  "hit3": 4,
+  "hit3_rate": 0.8,
+  "context_hit": 4,
+  "context_hit_rate": 0.8,
+  "avg_context_chars": 1937,
+  "median_ms": 240.676,
+  "total_ms": 3131.823,
+  "service_cost_usd": 0.0,
+  "model_load_seconds": 12.597
+}

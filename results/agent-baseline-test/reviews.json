@@ -1,0 +1,44 @@
+[
+  {
+    "query_id": "q16",
+    "answer_grade": 0,
+    "citation_support": [false],
+    "note": "Wrong answer: reports signing date 17/04/2023 from p01:para:000 instead of effective date 01/07/2023 (p29:para:001 was dropped by 800-char budget)."
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact 72-hour erasure rule grounded in p15:para:001."
+  },
+  {
+    "query_id": "q18",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: TF-IDF did not retrieve p16:para:001 (Điều 17 khoản 4)."
+  },
+  {
+    "query_id": "q19",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: TF-IDF did not retrieve p01:para:001 (Điều 1) within budget."
+  },
+  {
+    "query_id": "q20",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: rank-1 chunk p15:para:001 (649 chars) from search 1 filled 716/800 chars; because agentic.py appends candidates and packs greedily in order, p28:para:000 (rank 1 in search 2 & 3, 605 chars) never fit into the 800-char budget."
+  },
+  {
+    "query_id": "u03",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "Correct abstention: Điều 28 and 30 do not specify certificate/degree requirements."
+  },
+  {
+    "query_id": "u04",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "Correct abstention: Điều 24 specifies updating upon changes, not multi-year renewal."
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "query_id": "q01",
+    "answer_grade": 0,
+    "citation_support": [false],
+    "note": "Wrong/incomplete answer: cites p03:para:000 listing sensitive data examples instead of p02:para:000 basic vs sensitive classification."
+  },
+  {
+    "query_id": "q02",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p04:para:000."
+  },
+  {
+    "query_id": "q03",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p03:para:000."
+  },
+  {
+    "query_id": "q04",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p05:para:000."
+  },
+  {
+    "query_id": "q05",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p10:para:000."
+  },
+  {
+    "query_id": "q06",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p08:para:000."
+  },
+  {
+    "query_id": "q07",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p11:para:000."
+  },
+  {
+    "query_id": "q08",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p14:para:000."
+  },
+  {
+    "query_id": "q09",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer including Điều 17 exception, grounded in p17:para:000."
+  },
+  {
+    "query_id": "q10",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: pre-improvement query rewrite dropped key phrase before abstain check."
+  },
+  {
+    "query_id": "q11",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact 60-day deadline grounded in p22:para:000."
+  },
+  {
+    "query_id": "q12",
+    "answer_grade": 0,
+    "citation_support": [false],
+    "note": "Vague/unsupported answer citing p24:para:000 (Điều 29 heading only) instead of p24:para:001 naming Cục An ninh mạng."
+  },
+  {
+    "query_id": "q13",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p25:para:002."
+  },
+  {
+    "query_id": "q14",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p26:para:001."
+  },
+  {
+    "query_id": "q15",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p29:para:001."
+  },
+  {
+    "query_id": "u01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "Correct abstention."
+  },
+  {
+    "query_id": "u02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "Correct abstention."
+  }
+]

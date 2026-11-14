@@ -1,0 +1,101 @@
+{
+  "split": "test",
+  "answerable_queries": ["q16", "q17", "q18", "q19", "q20"],
+  "rubric": {
+    "0": "Không có câu chứa bằng chứng cần thiết để trả lời đúng.",
+    "1": "Có một phần thông tin liên quan nhưng thiếu chi tiết hoặc điều kiện chính.",
+    "2": "Có đầy đủ bằng chứng để trả lời đúng và đầy đủ."
+  },
+  "configs": [
+    {
+      "config": "test-tfidf",
+      "strategy": "tfidf",
+      "top_k": 3,
+      "budget_chars": 800,
+      "counts": {"0": 4, "1": 0, "2": 1},
+      "mean_score": 0.4,
+      "cases": [
+        {
+          "query_id": "q16",
+          "context_ids": ["nd-13-2023-nd-cp:p01:para:000"],
+          "context_chars": 722,
+          "score": 0,
+          "note": "Chỉ có p01:para:000 (ngày ký 17/4/2023); rank-2 p29:para:001 (hiệu lực 01/7/2023) bị cắt khỏi context do budget=800."
+        },
+        {
+          "query_id": "q17",
+          "context_ids": ["nd-13-2023-nd-cp:p15:para:001"],
+          "context_chars": 716,
+          "score": 2,
+          "note": "p15:para:001 chứa đầy đủ thời hạn xóa 72 giờ và ngoại lệ."
+        },
+        {
+          "query_id": "q18",
+          "context_ids": ["nd-13-2023-nd-cp:p14:para:001"],
+          "context_chars": 714,
+          "score": 0,
+          "note": "Không có p16:para:001 (Điều 17 khoản 4); chỉ chứa Điều 16 khoản 7 về xóa dữ liệu."
+        },
+        {
+          "query_id": "q19",
+          "context_ids": ["nd-13-2023-nd-cp:p23:para:001"],
+          "context_chars": 732,
+          "score": 0,
+          "note": "Rank-3 p01:para:000 (chỉ tiêu đề Chương I, chưa có Điều 1) bị cắt và p01:para:001 không nằm trong top-3."
+        },
+        {
+          "query_id": "q20",
+          "context_ids": ["nd-13-2023-nd-cp:p15:para:001"],
+          "context_chars": 716,
+          "score": 0,
+          "note": "Rank-3 p28:para:000 (Điều 39 khoản 1) bị cắt khỏi context do budget=800."
+        }
+      ]
+    },
+    {
+      "config": "test-selected-rerank-budget2200",
+      "strategy": "hybrid_rerank",
+      "top_k": 3,
+      "budget_chars": 2200,
+      "counts": {"0": 1, "1": 0, "2": 4},
+      "mean_score": 1.6,
+      "cases": [
+        {
+          "query_id": "q16",
+          "context_ids": ["nd-13-2023-nd-cp:p01:para:000", "nd-13-2023-nd-cp:p29:para:001", "nd-13-2023-nd-cp:p22:para:001"],
+          "context_chars": 2172,
+          "score": 2,
+          "note": "Budget=2200 giữ lại rank-2 p29:para:001 chứa Điều 43 khoản 1 (01/7/2023)."
+        },
+        {
+          "query_id": "q17",
+          "context_ids": ["nd-13-2023-nd-cp:p15:para:001", "nd-13-2023-nd-cp:p08:para:000", "nd-13-2023-nd-cp:p14:para:001"],
+          "context_chars": 2089,
+          "score": 2,
+          "note": "p15:para:001 đứng rank 1 với đầy đủ bằng chứng."
+        },
+        {
+          "query_id": "q18",
+          "context_ids": ["nd-13-2023-nd-cp:p14:para:001", "nd-13-2023-nd-cp:p10:para:002", "nd-13-2023-nd-cp:p16:para:003"],
+          "context_chars": 2024,
+          "score": 0,
+          "note": "Thiếu p16:para:001 (Điều 17 khoản 4 ngắn 208 ký tự và thiếu cụm 'Điều 17 ... không cần sự đồng ý' vì nằm ở p15:para:002)."
+        },
+        {
+          "query_id": "q19",
+          "context_ids": ["nd-13-2023-nd-cp:p01:para:000", "nd-13-2023-nd-cp:p01:para:001", "nd-13-2023-nd-cp:p02:para:002"],
+          "context_chars": 1369,
+          "score": 2,
+          "note": "Filter Chương I + budget=2200 đưa được p01:para:001 (Điều 1 khoản 1) vào context."
+        },
+        {
+          "query_id": "q20",
+          "context_ids": ["nd-13-2023-nd-cp:p28:para:000", "nd-13-2023-nd-cp:p27:para:002", "nd-13-2023-nd-cp:p28:para:001"],
+          "context_chars": 2031,
+          "score": 2,
+          "note": "Filter Chương III + rerank đưa p28:para:000 lên rank 1."
+        }
+      ]
+    }
+  ]
+}

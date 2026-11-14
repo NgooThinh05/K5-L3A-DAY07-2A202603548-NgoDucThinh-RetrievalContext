@@ -1,0 +1,19 @@
+{
+  "config": "dev-hybrid-rrf",
+  "strategy": "hybrid_rrf",
+  "split": "dev",
+  "top_k": 3,
+  "budget_chars": 800,
+  "n": 15,
+  "hit1": 10,
+  "hit1_rate": 0.6667,
+  "hit3": 13,
+  "hit3_rate": 0.8667,
+  "context_hit": 10,
+  "context_hit_rate": 0.6667,
+  "avg_context_chars": 640.2,
+  "median_ms": 225.482,
+  "total_ms": 3656.554,
+  "service_cost_usd": 0.0,
+  "model_load_seconds": 20.453
+}

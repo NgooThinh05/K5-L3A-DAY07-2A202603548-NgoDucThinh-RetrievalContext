@@ -1,0 +1,22 @@
+{
+  "config": "selected",
+  "strategy": "hybrid_rerank",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "top_k": 3,
+  "budget_chars": 2200,
+  "max_searches": 3,
+  "n_cases": 17,
+  "status_counts": {
+    "answered": 14,
+    "abstain": 3
+  },
+  "search_calls_distribution": {
+    "1": 16,
+    "2": 1
+  },
+  "total_prompt_tokens": 29611,
+  "total_completion_tokens": 2031,
+  "total_cost_usd": 0.00566,
+  "total_elapsed_ms": 72319.85
+}

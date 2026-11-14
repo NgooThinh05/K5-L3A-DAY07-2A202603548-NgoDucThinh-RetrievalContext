@@ -1,0 +1,19 @@
+{
+  "config": "dev-improve1-budget1800",
+  "strategy": "hybrid_rrf",
+  "split": "dev",
+  "top_k": 3,
+  "budget_chars": 1800,
+  "n": 15,
+  "hit1": 10,
+  "hit1_rate": 0.6667,
+  "hit3": 13,
+  "hit3_rate": 0.8667,
+  "context_hit": 12,
+  "context_hit_rate": 0.8,
+  "avg_context_chars": 1376.8,
+  "median_ms": 183.665,
+  "total_ms": 3200.196,
+  "service_cost_usd": 0.0,
+  "model_load_seconds": 20.453
+}

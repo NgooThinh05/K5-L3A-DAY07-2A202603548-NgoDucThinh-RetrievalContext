@@ -1,0 +1,19 @@
+{
+  "config": "dev-improve2-rerank-budget2200",
+  "strategy": "hybrid_rerank",
+  "split": "dev",
+  "top_k": 3,
+  "budget_chars": 2200,
+  "n": 15,
+  "hit1": 12,
+  "hit1_rate": 0.8,
+  "hit3": 14,
+  "hit3_rate": 0.9333,
+  "context_hit": 14,
+  "context_hit_rate": 0.9333,
+  "avg_context_chars": 1724,
+  "median_ms": 198.42,
+  "total_ms": 3314.654,
+  "service_cost_usd": 0.0,
+  "model_load_seconds": 20.453
+}

@@ -1,0 +1,19 @@
+{
+  "config": "dev-tfidf",
+  "strategy": "tfidf",
+  "split": "dev",
+  "top_k": 3,
+  "budget_chars": 800,
+  "n": 15,
+  "hit1": 12,
+  "hit1_rate": 0.8,
+  "hit3": 13,
+  "hit3_rate": 0.8667,
+  "context_hit": 12,
+  "context_hit_rate": 0.8,
+  "avg_context_chars": 675.5,
+  "median_ms": 0.525,
+  "total_ms": 18.495,
+  "service_cost_usd": 0.0,
+  "model_load_seconds": 0.0
+}

@@ -1,0 +1,23 @@
+{
+  "config": "baseline",
+  "strategy": "tfidf",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "top_k": 3,
+  "budget_chars": 800,
+  "max_searches": 3,
+  "n_cases": 17,
+  "status_counts": {
+    "abstain": 5,
+    "answered": 12
+  },
+  "search_calls_distribution": {
+    "1": 14,
+    "2": 1,
+    "3": 2
+  },
+  "total_prompt_tokens": 25644,
+  "total_completion_tokens": 1959,
+  "total_cost_usd": 0.005022,
+  "total_elapsed_ms": 75031.3
+}

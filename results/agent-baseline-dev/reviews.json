@@ -1,0 +1,104 @@
+[
+  {
+    "query_id": "q01",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: TF-IDF budget=800 did not return p02:para:000."
+  },
+  {
+    "query_id": "q02",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: TF-IDF failed to retrieve p04:para:000 with definition of Bên Kiểm soát."
+  },
+  {
+    "query_id": "q03",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Correct conclusion grounded in p03:para:000 (clause 4b exclusion of blood type)."
+  },
+  {
+    "query_id": "q04",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p05:para:000."
+  },
+  {
+    "query_id": "q05",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p10:para:000."
+  },
+  {
+    "query_id": "q06",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p08:para:000."
+  },
+  {
+    "query_id": "q07",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p11:para:000."
+  },
+  {
+    "query_id": "q08",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p14:para:000."
+  },
+  {
+    "query_id": "q09",
+    "answer_grade": 1,
+    "citation_support": [true],
+    "note": "Answers child + parent/guardian consent from p17:para:000, but omits exception 'trừ trường hợp quy định tại Điều 17'."
+  },
+  {
+    "query_id": "q10",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: TF-IDF top-1 hit p29:para:000 filled 800-char budget; agent abstained after 1 search."
+  },
+  {
+    "query_id": "q11",
+    "answer_grade": 0,
+    "citation_support": [false],
+    "note": "Wrong answer: gives 10-day completion after Ministry request (khoản 6 in p22:para:001) instead of 60-day initial submission (khoản 3 in p22:para:000)."
+  },
+  {
+    "query_id": "q12",
+    "answer_grade": 0,
+    "citation_support": [false],
+    "note": "Unsupported/circular answer citing p24:para:002 (Điều 30) instead of naming Cục An ninh mạng... - Bộ Công an (p24:para:001)."
+  },
+  {
+    "query_id": "q13",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p25:para:002."
+  },
+  {
+    "query_id": "q14",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p26:para:001."
+  },
+  {
+    "query_id": "q15",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "note": "Exact answer grounded in p29:para:001."
+  },
+  {
+    "query_id": "u01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "Correct abstention after 2 searches confirming no fine amount/revenue percentage exists."
+  },
+  {
+    "query_id": "u02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "Correct abstention confirming no appraisal fee exists."
+  }
+]
